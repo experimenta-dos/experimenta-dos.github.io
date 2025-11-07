@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+  <!-- link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css" --->
   <style>
     @font-face {
           font-family: Selectric; /* set name */
@@ -19,40 +19,40 @@
           font-size: large;
         }
         body {
-             background: '#fafafa';
+             background: #fafafa;
             font-family: 'Selectric';
         }
-
-div {
-  width: 300px;
-  margin: auto;
-}
 .container {
 overflow: hidden;
 position: relative;
-height: 50px;margin:0; padding: 40px;
+height: 180px;margin:0; padding: 40px;
 }
 
 .img-responsive {
 position: absolute;
 width: auto;
 height: 100%;
-left: 50%;
+left: 100%;
 top: 50%;
   float: left;
--webkit-transform: translate(-50%,-50%);
--ms-transform: translate(-50%,-50%);
-transform: translate(-50%,-50%);
+  mask-position: left right;
+  -webkit-mask-image: linear-gradient(to left, rgb(30, 118, 126) 10%, transparent 90%);
+transform: translate(-100%,-50%);
+
 }
 
 p {
 
   border-top: 2px dashed;
-  border-color: black !important;
+  border-color: #646496d0 !important;
   margin:0; padding: 40px;
 }
 
+.timeline {
+  width: 70vw;
 
+  margin: 0 auto;
+}
 
 p:nth-child(even) {
   border-left: 2px dashed;
@@ -81,16 +81,15 @@ p:last-child {
   border-bottom-left-radius:0;
 }
     </style>
-
-  <div>
-
-</div>
 </head>
   <body>
+<div class="timeline"> 
     <h1>Classes de programacion 1:1 en el centro de Barcelona</h1>
     <h2> Contacta conmigo: </h2>
     Via instagram: <a href="https://www.instagram.com/experimenta.dos/"> @experimenta.dos </a>
     <h2>Quien soy</h2>
+    <p> Me llamo Lau y aqui dejo un micro-curriculum, para que veas que he hecho</p>
+
      <p ><b>Eng.Sup.Informatica Especializado en Multimedia</b> Proyectos interactivos de prototipado de sonido en videojuegos y una demo para la ReactTable </p><p class="container"> <img 
   class="img-responsive" 
   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUXUnlV5MuJeeupVvUSACMo1SXOMbZA5UIIYK7IFhKAZmP5ZxM-Tm-aagfc-Y41nxD1evWaTtN46S2x-wFGRsW0haw-3tAy70SR4h6huTtva78mcM5vEHUaWO5xtzdpBeYuz4KORiUxrA/s1600/reactable.jpg"></p> 
@@ -101,5 +100,5 @@ p:last-child {
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit? Molestias harum voluptatibus veritatis explicabo ut velit deserunt, saepe sit commodi?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit? Molestias harum voluptatibus veritatis explicabo ut velit deserunt, saepe sit commodi?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit? Molestias harum voluptatibus veritatis explicabo ut velit deserunt, saepe sit commodi?</p>
-  
+  </div>
   </body>
